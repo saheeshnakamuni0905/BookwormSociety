@@ -1,0 +1,148 @@
+/* author2.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(255, 202, 202);
+    color: #495057;
+}
+
+header {
+    background-color: #ddc9e4;
+    padding: 15px 0;
+}
+
+header a.navbar-brand,
+header a.nav-link {
+    color: #fff;
+    font-weight: bold;
+}
+
+header a.navbar-brand:hover,
+header a.nav-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#about img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#about h1 {
+    margin-top: 20px;
+    font-size: 2em;
+    color: rgb(255, 26, 148);
+}
+
+#about p {
+    margin-top: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.row {
+    margin: 0 -15px;
+}
+
+.card {
+    margin: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card .card-text {
+    font-size: 0.9em;
+    color: #ff1493; /* Bright pink for text inside cards */
+}
+
+/* General styling for badges */
+.badge {
+    display: inline-block;
+    padding: 0.5em 0.75em;
+    font-size: 0.75em;
+    color: white;
+    background-color: #ff69b4; /* Bright pink for badges */
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+/* General styling for alerts */
+.alert {
+    padding: 0.75em 1em;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+/* Specific styling for info alerts */
+.alert-info {
+    color: #ff85ad; /* Lighter bright pink for text */
+    background-color: #ffb6c1; /* Light pink background */
+    border-color: #ff69b4; /* Bright pink border */
+}
+
+/* Accordion and card styling */
+#accordion .card {
+    border: 1px solid #ff85ad; /* Light bright pink border for cards */
+    margin-bottom: 0.75rem;
+}
+
+#accordion .card-header {
+    padding: 0.5em 1em;
+    background-color: #ff69b4; /* Bright pink for header */
+    border-bottom: 1px solid #ff85ad;
+}
+
+#accordion .btn-link {
+    color: #ff1493; /* Bright pink for link buttons */
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-size: 1.25em;
+}
+
+#accordion .collapse.show {
+    border: none;
+}
+
+#accordion .card-body {
+    padding: 1em;
+}
+
+/* Ensuring accessibility with focus states for interactive elements */
+#accordion .btn-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(255, 105, 180, .5); /* Soft bright pink glow */
+}
+
+/* Custom CSS for button when it is in collapsed state */
+#accordion .btn-link.collapsed {
+    color: #ff85ad; /* Soft pink for contrast when collapsed */
+}
+
+.bi {
+    vertical-align: text-bottom;
+    margin-right: 5px; 
+}

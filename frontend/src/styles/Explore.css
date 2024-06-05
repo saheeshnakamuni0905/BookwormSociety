@@ -1,0 +1,87 @@
+  
+/* Explore.css */
+.explore-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family:  'sans-serif'; 
+    color: #100069;
+  }
+  
+  .explore-container {
+    padding-bottom: 4rem; /* Ensure there is padding at the bottom */
+    min-height: 100vh; /* Minimum height to be at least the height of the viewport */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+  }
+  
+  .explore-header h5 {
+    color: #5f69b3; /* Gentle steel blue color */
+    font-family: 'Merriweather', serif; /* Apply Merriweather font */
+    font-weight: 300; /* Lighter font weight for a sophisticated look */
+    font-size: 1.5rem; /* Adjust size if necessary */
+    margin-top: 0.5rem; /* Space between the main title and subtitle */
+  }
+  
+  
+  .explore-grid {
+    max-width: 1400px; /* Wider max width for more space */
+    margin: 0 auto; /* Center the grid */
+    padding: 0 2rem; /* Padding on the sides */
+    overflow-y: auto;
+  }
+  
+  .explore-card {
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border: none; /* Remove default border */
+    border-radius: 16px; /* Slightly more rounded corners for the card */
+    overflow: hidden; /* Ensures the card content respects border-radius */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+    background: #ffffff; /* White background for card */
+  }
+  
+  .explore-card:hover {
+    transform: translateY(-5px); /* Lift the card slightly on hover */
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.18); /* More pronounced shadow on hover */
+  }
+  
+  .explore-card-media {
+    height: 280px; /* Adjusted height for images */
+  }
+  
+  .explore-card-content {
+    padding: 1.5rem; /* Increased padding for more space inside the card */
+  }
+  
+  .explore-card-actions {
+    padding: 1rem 1.5rem; /* Padding to align with content area padding */
+    background: #e9f5ff; /* Light blue background for the actions area */
+    border-top: 1px solid #e2e8f0; /* Separator for content and actions area */
+  }
+  
+  .view-details-btn {
+    color: #4c51bf; /* Vibrant blue color for the button */
+    font-weight: 500; /* Medium font weight for the button text */
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 960px) {
+    .explore-card-media {
+      height: 200px; /* Adjust height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .explore-header {
+      margin-bottom: 3rem; /* Less space after the header on smaller screens */
+    }
+    .explore-header h1 {
+      font-size: 2rem; /* Smaller font size for mobile */
+    }
+    .explore-header p {
+      font-size: 1.25rem; /* Adjust subtitle size on smaller screens */
+    }
+    .explore-grid {
+      padding: 0 1rem; /* Smaller side padding on mobile for more space */
+    }
+  }
+  
